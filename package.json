@@ -1,6 +1,6 @@
 {
     "name": "dot-limiter",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "a simple rate limiter",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -34,5 +34,13 @@
         "mocha": "^11.1.0",
         "mongodb": "^6.12.0",
         "supertest": "^7.0.0"
+    },
+    "devDependencies": {
+        "@semantic-release/changelog": "^6.0.3",
+        "@semantic-release/commit-analyzer": "^13.0.1",
+        "@semantic-release/git": "^10.0.1",
+        "@semantic-release/npm": "^12.0.1",
+        "@semantic-release/release-notes-generator": "^14.0.3",
+        "semantic-release": "^24.2.3"
     }
 }
