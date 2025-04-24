@@ -1,6 +1,6 @@
 
 export interface RateLimiter {
-    allowRequest(): boolean;
+    allowRequest(): Promise<boolean>;
 }
 
 export interface PersistenceStore {
@@ -8,3 +8,4 @@ export interface PersistenceStore {
     set(key: string, value: number, ttl?: number): Promise<void> | void;
     delete(key: string): Promise<void> | void;
 }
+

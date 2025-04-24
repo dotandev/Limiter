@@ -19,13 +19,14 @@ export class TokenBucket implements RateLimiter {
     this.tokens = Math.min(this.capacity, this.tokens + elapsed * this.refillRate);
     this.lastRefill = now;
   }
-
-  public allowRequest(): boolean {
+  
+  public allowRequest(): Promise<boolean> {
     this.refillTokens();
     if (this.tokens >= 1) {
       this.tokens -= 1;
-      return true;
+      return Promise.resolve(true);
     }
-    return false;
+    return Promise.resolve(false);
   }
+  
 }
