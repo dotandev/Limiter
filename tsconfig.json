@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist", // Output compiled files to 'dist'
+    "rootDir": "./src", // Root directory for your source files
+    "strict": true,     // Enforce type-checking rules
+    "module": "commonjs", // Module system for Node.js
+    "target": "ES6",      // JavaScript version to compile to
+    "esModuleInterop": true, // Enable default import compatibility
+    "skipLibCheck": true  // Skip type checks for declaration files
+  },
+  "include": ["src/**/*"], // Include all TypeScript files in 'src'
+  "exclude": ["node_modules", "dist"] // Exclude node_modules and output folder
+}
