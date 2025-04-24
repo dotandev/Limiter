@@ -23,6 +23,14 @@ export class LeakyBucket implements RateLimiter {
     this.lastLeak = now;
   }
 
+  public loadState(state: number): void {
+    this.waterLevel = state;
+  }
+
+  public getState(): number {
+    return this.waterLevel;
+  }
+
   public async allowRequest(): Promise<boolean> {
     this.leakWater();
     if (this.waterLevel < this.capacity) {
