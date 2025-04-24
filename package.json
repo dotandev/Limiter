@@ -33,6 +33,8 @@
         "koa": "^2.15.3",
         "mocha": "^11.1.0",
         "mongodb": "^6.12.0",
+        "pg": "^8.15.5",
+        "postgres": "^3.4.5",
         "supertest": "^7.0.0"
     },
     "devDependencies": {
