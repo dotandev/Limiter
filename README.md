@@ -9,7 +9,7 @@
 
 ```bash
 
-npm install your-rate-limiter-library
+npm install dot-limiter
 
 
 ```
